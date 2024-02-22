@@ -23,6 +23,21 @@ class MyDocument extends Document {
             href="/favicon/favicon-16x16.png"
           />
           <link rel="manifest" href="/favicon/site.webmanifest" />
+          {/* Google Ads code */}
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (adsbygoogle = window.adsbygoogle || []).push({
+                  google_ad_client: "YOUR_GOOGLE_AD_CLIENT_ID",
+                  enable_page_level_ads: true
+                });
+              `,
+            }}
+          ></script>
         </Head>
         <body>
           <Main />
